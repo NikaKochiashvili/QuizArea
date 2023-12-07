@@ -171,6 +171,8 @@ nav {
   width: 100%;
   margin-bottom: 10px;
   border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
 }
 .glassHeader {
   grid-column: 1 / 5;
@@ -314,6 +316,10 @@ p,
     bottom: 100px;
     font-size: 26px;
   }
+  .footerNav {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 /* 1000px */
@@ -324,10 +330,22 @@ p,
   .item {
     width: 170px;
   }
+  .item img {
+    height: 200px;
+  }
   .likeBtn {
     left: 160px;
     bottom: 97px;
     font-size: 24px;
+  }
+  .upperFooter h1 {
+    font-size: 35px;
+  }
+  .upperFooter p {
+    font-size: 15px;
+  }
+  .subscribe .email {
+    width: 300px;
   }
 }
 
@@ -352,6 +370,9 @@ p,
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 30px;
+  }
+  .item img {
+    height: 180px;
   }
 }
 /* 768 */
@@ -379,6 +400,26 @@ p,
     bottom: 97px;
     font-size: 22px;
   }
+  .lowerFooter {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe button {
+    height: 50px;
+  }
+  .upperFooter h1 {
+    font-size: 26px;
+  }
+  .upperFooter p {
+    font-size: 15px;
+  }
+  .subscribe .email {
+    width: 280px;
+  }
 }
 /* 524 */
 @media (max-width: 524px) {
@@ -399,5 +440,22 @@ p,
     left: 135px;
     bottom: 90px;
     font-size: 22px;
+  }
+  .subscribe .email {
+    width: 180px;
+    font-size: 12px;
+  }
+  .subscribe button {
+    height: 40px;
+    font-size: 16px;
+  }
+  .upperFooter {
+    background-image: linear-gradient(
+      90deg,
+      transparent,
+      #788bff 40%,
+      #788bff 60%,
+      transparent 100%
+    );
   }
 }
