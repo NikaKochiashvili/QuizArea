@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6ea993f307.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>QuizArea</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="header-inner-section">
+        <!-- NAVIGATION -->
+        <nav>
+          <a href="index.html">
+            <img src="./img/Logo.png" alt="Logo.png" class="logo" />
+          </a>
+          <div class="nav-links">
+            <ul>
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li class="dropdown">
+                <a href="">Categories</a>
+                <div class="dropdown-content">
+                  <a href="">Geography</a>
+                  <a href="">Sports</a>
+                  <a href="">Music</a>
+                  <a href="">History</a>
+                  <a href="">Books</a>
+                  <a href="">Science</a>
+                </div>
+              </li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="authorization">
+            <a class="logIn" href="">Log In</a>
+            <a class="signUp" href="">Sign Up</a>
+          </div>
+          <div class="burgerMenu" id="burgerMenu">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Categories</a>
+              </li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <br />
+            <li>
+              <a href="">Log In</a>
+            </li>
+            <li>
+              <a href="">Sign Up</a>
+            </li>
+          </div>
+          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- Popular Quizes -->
+        <div class="glass">
+          <div class="glassHeader">
+            <h1>THE MOST POPULAR QUIZES</h1>
+            <br />
+          </div>
+          <div class="grid">
+            <div class="item">
+              <img src="./img/QuizPhotos/Cosmos.jpg" alt="img" />
+              <div class="likeBtn" id="likeBtn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="unLikeBtn" id="unLikeBtn">
+                <i class="fas fa-heart"></i>
+              </div>
+
+              <h3>Explore to the Cosmos!</h3>
+            </div>
+            <div class="item">
+              <img src="./img/QuizPhotos/Cosmos.jpg" alt="img" />
+              <div class="likeBtn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="unLikeBtn">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3>Explore to the Cosmos!</h3>
+            </div>
+            <div class="item">
+              <img src="./img/QuizPhotos/Cosmos.jpg" alt="img" />
+              <div class="likeBtn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="unLikeBtn">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3>Explore to the Cosmos!</h3>
+            </div>
+            <div class="item">
+              <img src="./img/QuizPhotos/Cosmos.jpg" alt="img" />
+              <div class="likeBtn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="unLikeBtn">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3>Explore to the Cosmos!</h3>
+            </div>
+            <div class="item">
+              <img src="./img/QuizPhotos/Cosmos.jpg" alt="img" />
+              <div class="likeBtn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="unLikeBtn">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3>Explore to the Cosmos!</h3>
+            </div>
+            <div class="item">
+              <img src="./img/QuizPhotos/Cosmos.jpg" alt="img" />
+              <div class="likeBtn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="unLikeBtn">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3>Explore to the Cosmos!</h3>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="footer">
+          <div class="upperFooter">
+            <h1>Subscribe now & Get the latest updates</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              <br />
+              aliquam nulla, rem officiis sequi quibusdam ipsum autem.
+            </p>
+            <div class="subscribe">
+              <input class="email" type="email" placeholder="Email Address" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+          <div class="lowerFooter">
+            <a href="index.html">
+              <img src="./img/Logo.png" alt="Logo.png" class="logo" />
+            </a>
+            <p>
+              Made with
+              <span>
+                <i class="fas fa-heart" style="color: red"></i>
+              </span>
+              by Nick
+            </p>
+            <div class="footerNav">
+              <a href="#">About Us</a>
+              <a href="#">Terms & Condiditons</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("burgerMenu");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+        navLinks.style.display = "block";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
